@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+    }
+    .container{
+            display: flex;
+            height: 500px;
+            width: 300px;
+            background-color: white;
+            align-items: flex-start;
+            justify-content: center;
+            position: relative;
+
+        }
+    .circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        position: absolute;
+        background-color: red;
+        animation-name: circle;
+        animation-duration: 15s;    
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+
+    @keyframes circle {
+        0%   { 
+            top: 0;
+         }
+        25%  
+        { 
+            top: 100px; 
+        }
+        50%  
+        { 
+            top: 400px; 
+        }
+        75%  
+        { 
+            top: 100px; 
+        }
+        100% 
+        { 
+            top: 0; 
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+
+        </div>
+    </div>
+</body>
+</html>

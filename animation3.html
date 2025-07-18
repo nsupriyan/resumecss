@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   body{
+    background-color: black;
+   }
+   .box{
+    height: 500px;
+    width: 700px;
+    border: 4px solid white;
+    position: absolute;
+    left: 25%;
+    top: 90px;
+   }
+    .text{
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    top: 130px ;
+    left: 170px;
+    animation-name: colour;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+  background: repeating-linear-gradient(
+    60deg,
+    pink 10px,
+    skyblue 10px,
+    yellow 20px,
+    purple 30px,
+    orange 40px,
+    brown 50px
+  ); 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;    
+        }
+   @keyframes colour{
+    0% {
+        background-position: 20px 50px;
+      }
+      100% {
+        background-position: 300px 300px;
+      }
+   }
+</style>
+<body>
+     <div class="box">
+    <h1 class="text">Stripe Text<br>Animation!</h1>
+  </div>
+</body>
+</html>

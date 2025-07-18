@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .box{
+        height: 500px;
+        width:700px;
+        background: linear-gradient(to bottom,orange,black);
+        position: relative;
+        left: 25%;
+        top: 80px;
+    }
+    .circle1{
+        height: 160px;
+        width: 160px;
+        border-radius: 80px;
+        background-color: yellow;
+        position: absolute;
+        top: 150px;
+        left: 270px;
+        animation-name: cir;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-direction: alternate;
+    
+    }
+    .circle2{
+        height: 160px;
+        width: 160px;
+        border-radius: 80px;
+        background-color: orange;
+        position: absolute;
+        top: 150px;
+        left: 270px;
+    }
+    @keyframes cir{
+        0%{
+            top: 150px;
+        left: 270px;
+        }
+        25%{
+             top: 150px;
+        left: 270px;
+        box-shadow: 0 0 20px 30px yellow;
+        }
+        100%{
+             top: 170px;
+        left: 300px;
+
+        }
+        
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+</div>
+    
+</body>
+</html>
