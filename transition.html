@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.text{
+  position: relative;
+  cursor: pointer;
+}
+span, .arrow {
+  font-size: 4rem;
+  display: inline-block;
+}
+
+.text:hover .arrow {
+  transform: rotate(90deg);
+  color: brown;
+}
+
+.text:hover span {
+  color: brown;
+}
+
+.content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: white;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.text:hover .content {
+  opacity: 1;
+  visibility: visible;
+}
+.content > a{
+  font-size: 4rem;
+  display: block;
+  padding: 0 8px 0 8px;
+  color: black;
+}
+</style>
+<body><div class="text">
+  <span>Programs </span> <div class="arrow"> <span>></span> </div> 
+  <div class="content">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JavaScript</a>
+      <a href="#">Java</a>
+      <a href="#">Python</a>
+    </div>
+    </div>
+
+</body>
+</html>
